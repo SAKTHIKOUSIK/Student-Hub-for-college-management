@@ -31,7 +31,7 @@ const StudentProfile = () => {
             <strong>Class:</strong> {sclassName.sclassName}
           </div>
           <div style={{ fontSize: '16px', marginBottom: '10px', color: '#555' }}>
-            <strong>School:</strong> {studentSchool.schoolName}
+            <strong>College:</strong> {studentSchool.CollegeName}
           </div>
         </div>
       </div>

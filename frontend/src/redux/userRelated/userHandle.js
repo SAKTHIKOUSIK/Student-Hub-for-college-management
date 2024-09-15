@@ -14,6 +14,8 @@ import {
     getError,
 } from './userSlice';
 
+const REACT_APP_BASE_URL = "http://localhost:5000";
+
 // Function to extract meaningful error details
 const extractErrorDetails = (error) => {
     return {

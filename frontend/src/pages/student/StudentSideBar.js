@@ -8,6 +8,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import AnnouncementOutlinedIcon from '@mui/icons-material/AnnouncementOutlined';
 import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import ToDo from './ToDo';
 
 const StudentSideBar = () => {
     const location = useLocation();
@@ -78,6 +79,24 @@ const StudentSideBar = () => {
                             </ListItemIcon>
                         </ListItemIcon>
                         <ListItemText primary="Logout" />
+                    </ListItemButton>
+                    <ListItemButton component={Link} to="/Student/taskmanager">
+                        <ListItemIcon>
+                            {/* <ExitToAppIcon color={location.pathname.startsWith("/logout") ? 'primary' : 'inherit'} /> */}
+                            <ListItemIcon sx={{ color: location.pathname.startsWith('/logout') ? 'primary.main' : '#fff' }}>
+                                <ExitToAppIcon />
+                            </ListItemIcon>
+                        </ListItemIcon>
+                        <ListItemText primary="Task Manager" />
+                    </ListItemButton>
+                    <ListItemButton component={Link} to="/Student/taskmanager">
+                        <ListItemIcon>
+                            {/* <ExitToAppIcon color={location.pathname.startsWith("/logout") ? 'primary' : 'inherit'} /> */}
+                            <ListItemIcon sx={{ color: location.pathname.startsWith('/logout') ? 'primary.main' : '#fff' }}>
+                                <ExitToAppIcon />
+                            </ListItemIcon>
+                        </ListItemIcon>
+                        <ListItemText primary="Placement Materials" />
                     </ListItemButton>
                 </React.Fragment>
             </div>

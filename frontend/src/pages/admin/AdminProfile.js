@@ -61,7 +61,7 @@ const AdminProfile = () => {
                         <strong>Email:</strong> {currentUser.email}
                     </div>
                     <div style={{ fontSize: '16px', marginBottom: '10px', color: '#555' }}>
-                        <strong>School:</strong> {currentUser.schoolName}
+                        <strong>College:</strong> {currentUser.CollegeName}
                     </div>
                 </div>
             </div>

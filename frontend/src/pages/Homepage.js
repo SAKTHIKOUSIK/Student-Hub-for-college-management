@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Grid, Box, Button } from '@mui/material';
 import styled from 'styled-components';
 import Students from "../assets/students.svg";
-import homephoto from "../assets/homephoto.png";
+import homephoto from "../assets/homephoto.jpg";
 import linebackground from '../assets/linebackground.avif'
 
 import { LightPurpleButton } from '../components/buttonStyles';
@@ -17,18 +17,21 @@ const Homepage = () => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <StyledPaper elevation={3}>
-                        <StyledTitle>
-                            Welcome to
-                            <br />
-                            School Management
-                            <br />
-                            System
-                        </StyledTitle>
-                        <StyledText>
-                            Streamline school management, class organization, and add students and faculty.
-                            Seamlessly track attendance, assess performance, and provide feedback.
-                            Access records, view marks, and communicate effortlessly.
-                        </StyledText>
+                    <StyledTitle style={{position:'absolute', translate:'-600px 0 0'}}>
+                      Welcome to Smart Hub For College Management System
+                    </StyledTitle>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                   <StyledText style={{textAlign:'justify'}}>
+                    The "Smart Hub For College Management System Using MERN Stack" is an advanced ERP-based web application designed to streamline the management processes within a college. 
+                    The platform caters to three primary users: Admin, Teachers, and Students.
+                    It integrates a help chatbot, a productive task manager, and personalized dashboards, facilitating efficient management of academic and administrative tasks.
+                    Additionally, the platform includes a dedicated placement preparation section that offers study materials related to aptitude and coding. The platform aims to simplify complex processes, improve communication, and enhance productivity within the educational ecosystem.
+                    </StyledText>
+
                         <StyledBox>
                             <StyledLink to="/choose">
                                 <LightPurpleButton variant="contained" fullWidth>

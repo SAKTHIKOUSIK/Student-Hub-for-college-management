@@ -13,7 +13,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../redux/userRelated/userHandle';
 import Popup from '../components/Popup';
-import linebackground from '../assets/linebackground.avif'
+import linebackground from '../assets/linebackground.jpg'
 
 const ChooseUser = ({ visitor }) => {
   const dispatch = useDispatch()
