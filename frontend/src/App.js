@@ -8,7 +8,8 @@ import TeacherDashboard from './pages/teacher/TeacherDashboard';
 import LoginPage from './pages/LoginPage';
 import AdminRegisterPage from './pages/admin/AdminRegisterPage';
 import ChooseUser from './pages/ChooseUser';
-import ToDo from './pages/student/ToDo';
+import './App.css';
+
 
 
 

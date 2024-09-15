@@ -21,6 +21,7 @@ import Logout from '../Logout'
 import AccountMenu from '../../components/AccountMenu';
 import { AppBar, Drawer } from '../../components/styles';
 import ToDo from './ToDo';
+import Study from './Study';
 
 const StudentDashboard = () => {
     const [open, setOpen] = useState(true);
@@ -81,7 +82,12 @@ const StudentDashboard = () => {
                         <Route path="/Student/attendance" element={<ViewStdAttendance />} />
                         <Route path="/Student/complain" element={<StudentComplain />} />
                         <Route path="/Student/taskmanager" element={<ToDo/>}/>
+                        <Route path="/Student/study" element={<Study />} />
+
+
+
                         <Route path="/logout" element={<Logout />} />
+
                     </Routes>
                 </Box>
             </Box>

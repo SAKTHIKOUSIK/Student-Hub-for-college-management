@@ -1,23 +1,82 @@
+// import React from 'react';
+// import { createTheme, ThemeProvider } from '@mui/material';
+
+// const theme = createTheme({
+//     palette: {
+//         mode: "dark",
+//         primary: {
+//             main: "#a9afc3"
+//         },
+//         text: {
+//             primary: "#fff"
+//         }
+//     },
+//     components: {
+//         MuiIconButton: {
+//             defaultProps: {
+//                 sx: {
+//                     backgroundColor: "rgba(255, 255, 255, 0.035)",
+//                     color: "primary.main",
+//                     borderRadius: "8px",
+//                 }
+//             }
+//         },
+//         MuiCheckbox: {
+//             defaultProps: {
+//                 sx: {
+//                     padding: 0,
+//                 }
+//             }
+//         },
+//         MuiTooltip: {
+//             styleOverrides: {
+//                 tooltip: {
+//                     backgroundColor: "#233554"
+//                 }
+//             }
+//         },
+//     },
+// });
+
+// const AppThemeProvider = ({ children }) => {
+//     return (
+//         <ThemeProvider theme={theme}>
+//             {children}
+//         </ThemeProvider>
+//     );
+// };
+
+// export default AppThemeProvider;
+
+
+
+
 import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
     palette: {
-        mode: "dark",
+        mode: "light",
         primary: {
-            main: "#a9afc3"
+            main: "#4db5ff", // Light Blue
         },
         text: {
-            primary: "#fff"
-        }
+            primary: "#000", // Dark text for contrast
+        },
+        background: {
+            default: "#e0f7fa", // Light Blue background
+        },
     },
     components: {
         MuiIconButton: {
             defaultProps: {
                 sx: {
-                    backgroundColor: "rgba(255, 255, 255, 0.035)",
+                    backgroundColor: "rgba(77, 181, 255, 0.1)", // Light Blue background on hover
                     color: "primary.main",
                     borderRadius: "8px",
+                    '&:hover': {
+                        backgroundColor: "rgba(77, 181, 255, 0.2)", // Slightly darker on hover
+                    }
                 }
             }
         },
@@ -31,7 +90,7 @@ const theme = createTheme({
         MuiTooltip: {
             styleOverrides: {
                 tooltip: {
-                    backgroundColor: "#233554"
+                    backgroundColor: "#4db5ff", // Light Blue
                 }
             }
         },
