@@ -50,7 +50,7 @@ const AdminHomePage = () => {
                             {/* <img src={Students} alt="Students" /> */}
                             <Title>
                             <div style={{ fontSize: '18px', marginBottom: '10px', color: '#333', marginTop: '58px', color: 'white' }}>
-                                    <strong style={{ color: 'white' }}>Total Students,</strong> In your school
+                                    <strong style={{ color: 'white' }}>Total Students,</strong> In your Class
                                 </div>
                             </Title>
                             <Data start={0} end={numberOfStudents} duration={2.5} />
@@ -61,7 +61,7 @@ const AdminHomePage = () => {
                             {/* <img src={Classes} alt="Classes" /> */}
                             <Title>
                             <div style={{ fontSize: '18px', marginBottom: '10px', color: '#333', marginTop: '58px', color: 'white' }}>
-                                    <strong style={{ color: 'white' }}>Total Classes,</strong> In your school
+                                    <strong style={{ color: 'white' }}>Total Classes,</strong> In your College
                                 </div>
                             </Title>
                             
@@ -73,7 +73,7 @@ const AdminHomePage = () => {
                             {/* <img src={Teachers} alt="Teachers" /> */}
                             <Title>
                             <div style={{ fontSize: '18px', marginBottom: '10px', color: '#333', marginTop: '58px', color: 'white' }}>
-                                    <strong style={{ color: 'white' }}>Total Teachers,</strong> In your school
+                                    <strong style={{ color: 'white' }}>Total Teachers,</strong> In your College
                                 </div>
                             </Title>
                             

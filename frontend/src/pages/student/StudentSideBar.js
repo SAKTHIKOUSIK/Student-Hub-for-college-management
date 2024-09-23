@@ -178,7 +178,6 @@ const StudentSideBar = () => {
                     </ListItemButton>
                     <ListItemButton component={Link} to="/Student/study">
                         <ListItemIcon>
-                            {/* <ClassOutlinedIcon color={location.pathname.startsWith("/Student/attendance") ? 'primary' : 'inherit'} /> */}
                             <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/study') ? 'primary.main' : '#fff' }}>
                                 <ClassOutlinedIcon />
                             </ListItemIcon>
@@ -187,7 +186,6 @@ const StudentSideBar = () => {
                     </ListItemButton>
                     <ListItemButton component={Link} to="/Student/taskmanager">
                         <ListItemIcon>
-                            {/* <ExitToAppIcon color={location.pathname.startsWith("/logout") ? 'primary' : 'inherit'} /> */}
                             <ListItemIcon sx={{ color: location.pathname.startsWith('/logout') ? 'primary.main' : '#fff' }}>
                                 <ExitToAppIcon />
                             </ListItemIcon>
