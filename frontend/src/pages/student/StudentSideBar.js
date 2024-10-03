@@ -176,7 +176,7 @@ const StudentSideBar = () => {
                         </ListItemIcon>
                         <ListItemText primary="Complain" />
                     </ListItemButton>
-                    <ListItemButton component={Link} to="/Student/study">
+                    {/* <ListItemButton component={Link} to="/Student/study">
                         <ListItemIcon>
                             <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/study') ? 'primary.main' : '#fff' }}>
                                 <ClassOutlinedIcon />
@@ -191,7 +191,7 @@ const StudentSideBar = () => {
                             </ListItemIcon>
                         </ListItemIcon>
                         <ListItemText primary="Task Manager" />
-                    </ListItemButton>
+                    </ListItemButton> */}
                 </React.Fragment>
                 <Divider sx={{ my: 1 }} />
                 <React.Fragment>
