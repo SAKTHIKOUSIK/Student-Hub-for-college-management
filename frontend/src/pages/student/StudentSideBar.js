@@ -174,15 +174,15 @@ const StudentSideBar = () => {
                                 <AnnouncementOutlinedIcon />
                             </ListItemIcon>
                         </ListItemIcon>
-                        <ListItemText primary="Complain" />
-                    </ListItemButton>
-                    <ListItemButton component={Link} to="/Student/study">
+                        <ListItemText primary="Complaint" />
+                    </ListItemButton>                   
+                     <ListItemButton component={Link} to="/Student/study">       
                         <ListItemIcon>
                             <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/study') ? 'primary.main' : '#fff' }}>
                                 <ClassOutlinedIcon />
                             </ListItemIcon>
                         </ListItemIcon>
-                        <ListItemText primary="Study" />
+                        <ListItemText primary="Placement study modules" />
                     </ListItemButton>
                     <ListItemButton component={Link} to="/Student/taskmanager">
                         <ListItemIcon>

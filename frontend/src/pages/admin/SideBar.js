@@ -94,7 +94,7 @@ const SideBar = () => {
                                 <ReportIcon  />
                             </ListItemIcon>
                         </ListItemIcon>
-                        <ListItemText primary="Complains" />
+                        <ListItemText primary="Complaint" />
                     </ListItemButton>
 
                 </React.Fragment>
