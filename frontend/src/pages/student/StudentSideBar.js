@@ -182,7 +182,7 @@ const StudentSideBar = () => {
                                 <ClassOutlinedIcon />
                             </ListItemIcon>
                         </ListItemIcon>
-                        <ListItemText primary="Placement study modules" />
+                        <ListItemText primary="Placement Materials" />
                     </ListItemButton>
                     <ListItemButton component={Link} to="/Student/taskmanager">
                         <ListItemIcon>
