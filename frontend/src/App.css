@@ -185,3 +185,156 @@ footer {
   font-size: 0.9rem;
   color: #1565c0;
 } 
+
+
+
+
+/* Coding compiler */
+body {
+  margin: 0px 0px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.inp,
+.out {
+  background-color: #1e1e1e;
+}
+
+/* .Navbar {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-evenly;
+  border-bottom: 1px solid white;
+} */
+
+Nav,
+Editor {
+  font-family: "Abril Fatface", cursive;
+}
+
+.hout {
+  color: white;
+}
+
+.tc {
+  color: #000000;
+}
+.ts {
+  font-size: 1.2rem;
+}
+.edit {
+  width: 65vw;
+}
+.outd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .edit,
+  .inp,
+  .out,
+  .outd {
+    width: 80vw;
+  }
+  .inp,
+  .out {
+    margin-left: -10px;
+  }
+  .edit {
+    height: 60vh;
+  }
+  .outd {
+    position: absolute;
+    left: 10%;
+  }
+  .drops {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .hout {
+    margin-top: 20px;
+  }
+  .tc {
+    margin-top: 20px;
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 1207px) and (min-width: 768px) {
+  .outd {
+    margin-left: 10%;
+    height: 0px;
+  }
+}
+
+
+
+
+
+
+/* 
+for coding sheet */
+
+
+
+/* App.css */
+
+/* Custom styles for the table */
+th, td {
+  border: 1px solid #e0e0e0; /* Border for cells */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+tr:nth-child(even) {
+  background-color: #e0f7fa; /* Light blue for even rows */
+}
+
+tr:hover {
+  background-color: #b2ebf2; /* Light blue on hover */
+  transform: scale(1.02); /* Scale up on hover */
+}
+
+.animate-heading {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animate-heading:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  color: #1e3a8a; /* Darker blue on hover */
+}
+
+.animate-button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animate-button:hover {
+  background-color: #0ea5e9; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -22,6 +22,7 @@ import AccountMenu from '../../components/AccountMenu';
 import { AppBar, Drawer } from '../../components/styles';
 import ToDo from './ToDo';
 import Study from './Study';
+import Landing from './Landing';
 
 const StudentDashboard = () => {
     const [open, setOpen] = useState(true);
@@ -83,6 +84,9 @@ const StudentDashboard = () => {
                         <Route path="/Student/complain" element={<StudentComplain />} />
                         <Route path="/Student/taskmanager" element={<ToDo/>}/>
                         <Route path="/Student/study" element={<Study />} />
+
+                        <Route path="/Student/Landing" element={<Landing />} />
+                        
 
 
 

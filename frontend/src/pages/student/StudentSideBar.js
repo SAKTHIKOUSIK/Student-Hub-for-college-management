@@ -182,8 +182,19 @@ const StudentSideBar = () => {
                                 <ClassOutlinedIcon />
                             </ListItemIcon>
                         </ListItemIcon>
-                        <ListItemText primary="Placement Materials" />
+                        <ListItemText primary="Coding Sheet" />
                     </ListItemButton>
+
+                    <ListItemButton component={Link} to="/Student/Landing">       
+                        <ListItemIcon>
+                            <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/Landing') ? 'primary.main' : '#fff' }}>
+                                <ClassOutlinedIcon />
+                            </ListItemIcon>
+                        </ListItemIcon>
+                        <ListItemText primary="DSA Compiler" />
+                    </ListItemButton>
+
+
                     <ListItemButton component={Link} to="/Student/taskmanager">
                         <ListItemIcon>
                             <ListItemIcon sx={{ color: location.pathname.startsWith('/logout') ? 'primary.main' : '#fff' }}>

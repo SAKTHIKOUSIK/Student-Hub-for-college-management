@@ -545,39 +545,23 @@ const Banner = () => {
               transition={{ duration: 0.5 }}
               className="text-3xl md:text-4xl font-bold !leading-snug"
             >
-              <span className="text-secondary">About Us</span><br></br>
+              <span className="text-secondary">About Us</span><br />
               What does this web application do?
             </motion.h1>
 
-            <p className="text-dark2">
-             "Smart Hub for College Management" is an ERP-based system for admins, teachers, and students. 
-             Admins manage classes, subjects, and users, while teachers track student performance and attendance. 
-             Students view attendance percentage, manage tasks, prepare for placements, and use the help chatbot, 
-             enhancing communication and productivity within college management.
+            <p className="text-dark2 text-justify">
+              "Smart Hub for College Management" is an ERP-based system for admins, teachers, and students. 
+              Admins manage classes, subjects, and users, while teachers track student performance and attendance. 
+              Students view attendance percentage, manage tasks, prepare for placements, and use the help chatbot, 
+              enhancing communication and productivity within college management.
             </p>
-            {/* <div className="flex flex-col gap-6">
-              <motion.div
-                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
-              >
-                <p className="text-lg">Admin</p>
-              </motion.div>
-              <motion.div
-                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
-              >
-                <p className="text-lg">Teachers</p>
-              </motion.div>
-              <motion.div
-                className="flex items-center gap-4 p-6 bg-[#f4f4f4] rounded-2xl hover:bg-white duration-300 hover:shadow-2xl"
-              >
-                <p className="text-lg">Students</p>
-              </motion.div>
-            </div> */}
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 // Subscribe Section Component
 
 const Subscribe = () => {
@@ -655,145 +639,148 @@ const Footer = () => {
 
 
 const Banner1 = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
-  
-    return (
-      <section id="dashboards">
-        <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
-          {/* Banner Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="flex flex-col justify-center"
-          >
-            <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
-              <h1 className="text-4xl font-bold !leading-snug">
-                <span className="text-secondary">Dashboard</span><br />
-                <br />
-                <span className="text-secondary">Admin</span><br />
-                Manage Students, Teachers, and Classes Efficiently!
-              </h1>
-              <p className="text-dark2">
-                The admin dashboard displays total students, teachers, and classes. 
-                Admin can add and manage classes, subjects, teachers, and students. Notices, complaints, and feedback are shown. 
-                Admin profile and logout options are also available.
-              </p>
-              <button
-                onClick={() => navigate('/Adminlogin')} // Navigate to Admin login on click
-                className="primary-btn !mt-8"
-              >
-                Get Started
-              </button>
-            </div>
-          </motion.div>
-          {/* Banner Image */}
-          <div className="flex justify-center items-center">
-            <motion.img
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              src={Banner1Png}
-              alt="Banner1"
-              className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
-            />
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  return (
+    <section id="dashboards">
+      <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
+        {/* Banner Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col justify-center"
+        >
+          <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
+            <h1 className="text-4xl font-bold !leading-snug">
+              <span className="text-secondary">Dashboard</span><br />
+              <br />
+              <span className="text-secondary">Admin</span><br />
+              Manage Students, Teachers, and Classes Efficiently!
+            </h1>
+            <p className="text-dark2 text-justify">
+              The admin dashboard displays total students, teachers, and classes. 
+              Admin can add and manage classes, subjects, teachers, and students. Notices, complaints, and feedback are shown. 
+              Admin profile and logout options are also available.
+            </p>
+            <button
+              onClick={() => navigate('/Adminlogin')} // Navigate to Admin login on click
+              className="primary-btn !mt-8"
+            >
+              Get Started
+            </button>
           </div>
+        </motion.div>
+        {/* Banner Image */}
+        <div className="flex justify-center items-center">
+          <motion.img
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            src={Banner1Png}
+            alt="Banner1"
+            className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+          />
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+};
+
   
 
 // Banner2 Component with education2.png
 const Banner2 = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
-  
-    return (
-      <section>
-        <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
-          {/* Banner Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="flex flex-col justify-center"
-          >
-            <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
-              <h1 className="text-4xl font-bold !leading-snug">
-                <span className="text-secondary">Teachers</span><br />
-                Access Student Info, Attendance, and More!
-              </h1>
-              <p className="text-dark2">
-                The teacher dashboard shows a welcome message with their name, subject, total students, and sections. 
-                Teachers can view student details, take attendance, see attendance percentage, view student complaints or 
-                feedback, check their profile, and logout.
-              </p>
-              <button
-                onClick={() => navigate('/Teacherlogin')} // Navigate to Teacher login on click
-                className="primary-btn !mt-8"
-              >
-                Get Started
-              </button>
-            </div>
-          </motion.div>
-          {/* Banner Image */}
-          <div className="flex justify-center items-center">
-            <motion.img
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              src={Banner2Png}
-              alt="Banner2"
-              className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
-            />
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  return (
+    <section>
+      <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
+        {/* Banner Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col justify-center"
+        >
+          <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
+            <h1 className="text-4xl font-bold !leading-snug">
+              <span className="text-secondary">Teachers</span><br />
+              Access Student Info, Attendance, and More!
+            </h1>
+            <p className="text-dark2 text-justify">
+              The teacher dashboard shows a welcome message with their name, subject, total students, and sections. 
+              Teachers can view student details, take attendance, see attendance percentage, view student complaints or 
+              feedback, check their profile, and logout.
+            </p>
+            <button
+              onClick={() => navigate('/Teacherlogin')} // Navigate to Teacher login on click
+              className="primary-btn !mt-8"
+            >
+              Get Started
+            </button>
           </div>
+        </motion.div>
+        {/* Banner Image */}
+        <div className="flex justify-center items-center">
+          <motion.img
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            src={Banner2Png}
+            alt="Banner2"
+            className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+          />
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+};
+
   
 
 // Banner3 Component with education3.png
 const Banner3 = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
-  
-    return (
-      <section>
-        <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
-          {/* Banner Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="flex flex-col justify-center"
-          >
-            <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
-              <h1 className="text-4xl font-bold !leading-snug">
-                <span className="text-secondary">Students</span><br />
-                Track Attendance, Manage Tasks, and Prepare for Placements!
-              </h1>
-              <p className="text-dark2">
-                The student dashboard displays subjects, attendance percentage, and marks. 
-                Students can view attendance, submit complaints, manage tasks, access placement 
-                preparation materials, and use a help chatbot for website guidance.
-              </p>
-              <button
-                onClick={() => navigate('/Studentlogin')} // Navigate to Student login on click
-                className="primary-btn !mt-8"
-              >
-                Get Started
-              </button>
-            </div>
-          </motion.div>
-          {/* Banner Image */}
-          <div className="flex justify-center items-center">
-            <motion.img
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              src={Banner3Png}
-              alt="Banner3"
-              className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
-            />
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  return (
+    <section>
+      <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
+        {/* Banner Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col justify-center"
+        >
+          <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
+            <h1 className="text-4xl font-bold !leading-snug">
+              <span className="text-secondary">Students</span><br />
+              Track Attendance, Manage Tasks, and Prepare for Placements!
+            </h1>
+            <p className="text-dark2 text-justify">
+              The student dashboard displays subjects, attendance percentage, and marks. 
+              Students can view attendance, submit complaints, manage tasks, access placement 
+              preparation materials, and use a help chatbot for website guidance.
+            </p>
+            <button
+              onClick={() => navigate('/Studentlogin')} // Navigate to Student login on click
+              className="primary-btn !mt-8"
+            >
+              Get Started
+            </button>
           </div>
+        </motion.div>
+        {/* Banner Image */}
+        <div className="flex justify-center items-center">
+          <motion.img
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            src={Banner3Png}
+            alt="Banner3"
+            className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+          />
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+};
+
 
 
 const Chatbot = () => {
