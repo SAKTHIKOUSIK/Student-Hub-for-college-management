@@ -23,6 +23,7 @@ import { AppBar, Drawer } from '../../components/styles';
 import ToDo from './ToDo';
 import Study from './Study';
 import Landing from './Landing';
+import AptitudeSheet from './AptitudeSheet';
 
 const StudentDashboard = () => {
     const [open, setOpen] = useState(true);
@@ -86,6 +87,7 @@ const StudentDashboard = () => {
                         <Route path="/Student/study" element={<Study />} />
 
                         <Route path="/Student/Landing" element={<Landing />} />
+                        <Route path="/Student/AptitudeSheet" element={<AptitudeSheet />} />
                         
 
 

@@ -8,7 +8,7 @@ const CodingSheet = () => {
     
     <div className="bg-blue-50 font-sans fade-in">
       <h1 className="text-4xl text-center text-white bg-gradient-to-r from-blue-700 to-blue-400 py-6 rounded-lg mb-8 shadow-lg">
-        DSA CODING
+        DSA CODING SHEET
       </h1>
       <div className="container mx-auto px-4">
         <div className="mb-8">

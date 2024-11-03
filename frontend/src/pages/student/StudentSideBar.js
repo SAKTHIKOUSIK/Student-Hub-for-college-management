@@ -194,6 +194,16 @@ const StudentSideBar = () => {
                         <ListItemText primary="DSA Compiler" />
                     </ListItemButton>
 
+                    <ListItemButton component={Link} to="/Student/AptitudeSheet">       
+                        <ListItemIcon>
+                            <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/AptitudeSheet') ? 'primary.main' : '#fff' }}>
+                                <ClassOutlinedIcon />
+                            </ListItemIcon>
+                        </ListItemIcon>
+                        <ListItemText primary="Aptitude Sheet" />
+                    </ListItemButton>
+
+
 
                     <ListItemButton component={Link} to="/Student/taskmanager">
                         <ListItemIcon>
