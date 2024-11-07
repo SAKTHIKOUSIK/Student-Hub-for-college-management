@@ -167,15 +167,7 @@ const StudentSideBar = () => {
                         </ListItemIcon>
                         <ListItemText primary="Attendance" />
                     </ListItemButton>
-                    <ListItemButton component={Link} to="/Student/complain">
-                        <ListItemIcon>
-                            {/* <AnnouncementOutlinedIcon color={location.pathname.startsWith("/Student/complain") ? 'primary' : 'inherit'} /> */}
-                            <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/complain') ? 'primary.main' : '#fff' }}>
-                                <AnnouncementOutlinedIcon />
-                            </ListItemIcon>
-                        </ListItemIcon>
-                        <ListItemText primary="Complaint" />
-                    </ListItemButton>                   
+                                      
                      <ListItemButton component={Link} to="/Student/study">       
                         <ListItemIcon>
                             <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/study') ? 'primary.main' : '#fff' }}>
@@ -193,6 +185,16 @@ const StudentSideBar = () => {
                         </ListItemIcon>
                         <ListItemText primary="DSA Compiler" />
                     </ListItemButton>
+
+                    <ListItemButton component={Link} to="/Student/complain">
+                        <ListItemIcon>
+                            {/* <AnnouncementOutlinedIcon color={location.pathname.startsWith("/Student/complain") ? 'primary' : 'inherit'} /> */}
+                            <ListItemIcon sx={{ color: location.pathname.startsWith('/Student/complain') ? 'primary.main' : '#fff' }}>
+                                <AnnouncementOutlinedIcon />
+                            </ListItemIcon>
+                        </ListItemIcon>
+                        <ListItemText primary="Complaint" />
+                    </ListItemButton> 
 
                     <ListItemButton component={Link} to="/Student/AptitudeSheet">       
                         <ListItemIcon>

@@ -8,9 +8,10 @@ import TableTemplate from '../../../components/TableTemplate';
 
 const SeeComplains = () => {
 
-  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };  const dispatch = useDispatch();
+  const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+  const dispatch = useDispatch();
   const { complainsList, loading, error, response } = useSelector((state) => state.complain);
-  const { currentUser } = useSelector(state => state.user)
+  const { currentUser } = useSelector(state => state.user);
 
   useEffect(() => {
     dispatch(getAllComplains(currentUser._id, "Complain"));
@@ -30,7 +31,7 @@ const SeeComplains = () => {
     const date = new Date(complain.date);
     const dateString = date.toString() !== "Invalid Date" ? date.toISOString().substring(0, 10) : "Invalid Date";
     return {
-      user: complain.user.name,
+      user: complain.user?.name || "Unknown User",  // Optional chaining and fallback value
       complaint: complain.complaint,
       date: dateString,
       id: complain._id,
@@ -47,26 +48,25 @@ const SeeComplains = () => {
 
   return (
     <>
-      {loading ?
+      {loading ? (
         <div>Loading...</div>
-        :
+      ) : (
         <>
-          {response ?
+          {response ? (
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: '16px' }}>
               No Complains Right Now
             </Box>
-            :
+          ) : (
             <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-              {Array.isArray(complainsList) && complainsList.length > 0 &&
+              {Array.isArray(complainsList) && complainsList.length > 0 && (
                 <TableTemplate buttonHaver={ComplainButtonHaver} columns={complainColumns} rows={complainRows} />
-              }
+              )}
             </Paper>
-          }
+          )}
         </>
-      }
+      )}
     </>
   );
 };
 
 export default SeeComplains;
-
